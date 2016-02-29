@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://code.alibabatech.com/schema/dubbo
+	http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- 提供方应用信息，用于计算依赖关系 -->
+	<dubbo:application name="ccc_core" />
+
+<!-- 	<dubbo:registry address="multicast://224.4.1.4:9999"/> -->
+	<!-- 使用zookeeper暴露服务地址 -->
+	<dubbo:registry address="zookeeper://localhost:2181" />
+
+	<dubbo:consumer timeout="60000" />
+	<!-- 用dubbo协议在20880端口暴露服务 -->
+	<dubbo:protocol name="dubbo" port="20990" />
+
+	<!-- 声明需要暴露的服务接口 -->
+	<!--客户中心工具api接口 -->
+	<dubbo:service interface="com.dataup.ccc.api.service.ApiToolsService"
+		ref="apiToolsService" />
+	<!-- 邮箱操作接口 -->
+	<dubbo:service interface="com.dataup.ccc.api.service.MailService"
+		ref="mailService" />
+	<!-- 信息反馈 -->	
+	<dubbo:service interface="com.dataup.ccc.api.service.FeedbackService"
+		ref="feedbackService" />
+	<!-- 企业信息 -->	
+	<dubbo:service interface="com.dataup.ccc.api.service.EnterpriseService"
+		ref="enterpriseService" />
+	<!-- 客户项目信息 -->	
+	<dubbo:service interface="com.dataup.ccc.api.service.base.BaseService"
+		ref="baseService" />
+	<!-- 数据仓库统计 -->	
+	<dubbo:service interface="com.dataup.ccc.api.service.DwDataService"
+		ref="dwDataService" />
+	<!-- 项目信息 -->
+	<dubbo:service interface="com.dataup.ccc.api.service.ItemInfoService"
+		ref="itemInfoService" />
+</beans>

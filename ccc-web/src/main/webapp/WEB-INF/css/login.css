@@ -1,0 +1,89 @@
+/* css reset */
+html{font-family:'Hiragino Sans GB','Simsun';font-size:12px;}
+body,h1,h2,h3,h4,h5,h6,p,ol,ul,dl,dd,td,th,form,input,select,textarea{margin:0;padding:0;}
+img{border:none;vertical-align:top;}
+li{list-style:none;}
+.clearfix:after{clear:both;content:" ";display:block;font-size:0;height:0;visibility:hidden}
+.clearfix{zoom:1}
+a, a:hover { color:#1a8bf1; text-decoration:none; cursor:pointer; }
+/*弹窗*/
+.alert-bg { background:#000; height:100%; left:0;opacity:0.5; position:fixed;top:0;width:100%;z-index:9998;}
+.alertbox {height:340px; left:50%;margin-left:-310px;margin-top:-170px;position:fixed; top:50%;width:620px; z-index:10000; border:4px solid #c7c7c7; background-color:#fff; border-radius:3px; font-family:"微软雅黑";}
+.height2{ height:230px; margin-top:-115px;}
+.alertbox h3{ color:#323232; font-weight:700; font-size:14px; margin-bottom:10px; line-height:22px; margin:10px 10px 10px 10px; border-bottom:1px solid #f0f0f0; padding-bottom:10px;}
+.alertbox-tit{ padding-left:40px; padding-right:40px;color:#323232; height:51px; line-height:51px;margin-bottom:20px; font-size:24px; font-weight:500;}
+.alertbox-dl{ padding-left:48px; padding-right:48px; font-size:12px; color:#6c6c6c; line-height:22px; margin-bottom:22px;}
+.submitbtn a{ color:#fff; text-decoration:none; text-align:center;width:80px; height:30px; display:block; line-height:30px; background-color:#ff6047; margin:0 auto;border-radius:3px;}
+.submitbtn a:hover{ background-color:#ed7457;}
+.here:hover{ text-decoration:underline;color:#046ed0;}
+.closebtn{ position:absolute; top:6px; right:6px; width:24px; height:24px; background:url(../images/btnbg.png) no-repeat 0 -741px; display:block; text-indent:-9000px;}
+
+/* _login */
+.msg-error {
+position: relative;
+background: #ffebeb;
+color: #e4393c;
+border: 1px solid #e4393c;
+padding: 3px 10px 3px 40px;
+line-height: 18px;
+min-height: 18px;
+_height: 18px;
+margin-bottom:-20px;
+margin-top:6px;
+width:282px;
+}
+.msg_widths{ width:232px;}
+.msg-error b {
+position: absolute;
+top: 50%;
+left: 10px;
+display: block;
+margin-top: -8px;
+width: 16px;
+height: 16px;
+overflow: hidden;
+background: url(../images/pwd-icons-new.png) -104px -49px no-repeat;
+}
+.rainbow_bg01{background:url(../images/bg.gif);}
+.rainbow_bg01 .padtop{ padding-top:40px;}
+.rainbow_login{width:488px;margin:0 auto;padding:105px 0 0;font:14px 'Microsoft YaHei';color:#646464;}
+.rainbow_login .logo{text-align:center;}
+.rainbow_login .login_list{border:1px solid #edeceb;background:#fff;border-radius:2px;padding:9px 85px 42px 85px; }
+.rainbow_login .login_list p{padding-top:30px;}
+.rainbow_login .login_list p .sheet01{float:left;width:282px;height:42px;overflow:hidden;border:1px solid #e6e6e6;border-radius:3px;margin-right:5px;}
+.relative{position:relative;}
+.rainbow_login .login_list p .sheet_hover{border:1px solid #ccc;color:#505050;}
+.rainbow_login .login_list p .sheet_wrong{border:1px solid #fd4a2e;color:#505050; }
+
+
+.rainbow_login .login_list p .sheet02{width:156px;}
+.rainbow_login .login_list p.btn a,.rainbow_login .login_list p.btn a:hover{display:block;width:284px;hight:48px; padding:0;line-height:48px;font-size:20px;color:#fff;text-align:center;text-decoration:none;border-radius:5px;background-color:#ff6047;text-shadow:0 5px 10px #cf3018;  margin:0 auto; text-align:center }
+.rainbow_login .login_list p.btn a:hover{background-color:#ed7457;}
+.rainbow_login .login_list p .sheet01 label{float:left;width:70px;height:30px;border-right:1px solid #e6e6e6;overflow:hidden;margin-top:6px;text-align:center;line-height:30px;margin-right:10px;}
+.rainbow_login .login_list p .sheet01 input{float:left;width:192px;height:32px; line-height:32px;margin-top:6px;border:0;font-size:12px;color:#646464;}
+.rainbow_login .login_list p .sheet02 input{width:66px;}
+.fogetpass{ float:right; color:#ff6047; text-decoration:underline;}
+.fogetpass:hover{ float:right; color:#fd4a2e; text-decoration:underline;}
+.re{font-weight:normal; width:60px;}
+.re0{ display:inline-block;width:60px;}
+.checkcode{ display:inline-block; width:90px; height:40px; background: url(../images/bg.png); font-size:24px;white-space: nowrap;letter-spacing:-2px; color:#000; text-align:center;line-height:40px; }
+.forgetpassword{ font-size:20px; border-bottom:1px solid #f0f0f0; padding-bottom:6px;}
+
+
+/* _register */
+.rainbow_loginwidth{width:1000px;}
+.textintro{ margin-left:20px; line-height:20px; color:#909090; text-align:left; float:left; display:block; width:360px; float:left; }
+.singleline{ line-height:40px; height:40px;}
+.textforget{ height:40px; line-height:40px;}
+.rainbow_login .login_list p.btn{ text-align:center; margin:0 auto;}
+.rainbow_login .login_list p.btn .atonceload{ width:284px; display:block;hight:48px;line-height:48px;font-size:20px;color:#fff;text-align:center;text-decoration:none;border-radius:5px;background-color:#ff6047;text-shadow:0 5px 10px #cf3018;  margin:0 auto; border:none; cursor:pointer; font-family:"微软雅黑";}
+.rainbow_login .login_list p.btn .atonceload:hover{ background:#ed7457;}
+.fleft{ float:left;}
+.rainbow_login .login_list .loadtext a,.rainbow_login .login_list .textintrozhuce a{ text-decoration:underline;  }
+.rainbow_login .login_list .loadtext a:hover,.rainbow_login .login_list .textintrozhuce a:hover{ color:#046ed0;}
+/* _register success*/
+.textbig{ color:#262626; font-size:18px; margin-left:20px; height:51px; line-height:51px;   }
+.textintrozhuce{ font-size:12px; color:#505050; padding-left:74px; height:30px; line-height:30px;}
+.blue{ color:#0084ff;}
+.mailbtn{ font-size:14px;padding:0px 22px; height:34px; line-height:34px; background-color:#fd9315; display:inline-block; color:#fff; border-radius:3px;}
+.mailbtn:hover{  background-color:#f88700;color:#fff; }
